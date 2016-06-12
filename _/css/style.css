@@ -1,0 +1,264 @@
+html,body{
+	background: #ffffff;
+	font-family: fontawesome;
+	width: 100vw;
+	height: 100vh;
+}
+
+@font-face {
+    font-family: fontawesome;
+    src: url(../fonts/FontAwesome.otf);
+}
+@font-face {
+    font-family: gothic;
+    src: url(../fonts/LeagueGothic-Italic.otf);
+}
+@font-face {
+    font-family: newmars;
+    src: url(../fonts/newmarsital.ttf);
+}
+@font-face {
+    font-family: caviar;
+    src: url(../fonts/CaviarDreams.ttf);
+}
+.container{
+	position: relative;
+}
+
+
+.nav{
+	position:fixed;
+	background:transparent;
+	box-shadow: 0 0 0 0;
+	display:block;
+	z-index:9;
+}
+
+.nav-down{
+	position:fixed;
+	background:#2e2e2e;
+	box-shadow: 0 0 0 0;
+	display:block;
+	z-index:9;
+}
+
+nav ul li a{
+	/*color: #27c667;*/
+	width: 200px;
+	font-size: 20;
+	font-family: newmars;
+}
+
+
+nav ul li:hover{
+	background-color: transparent;
+}
+
+
+.brand-logo-mobile{
+	display: none;
+}
+
+.brand-logo{
+  -webkit-animation-delay: 1.2s;
+}
+.hidden{
+	opacity: 0;
+}
+
+.visible{
+	opacity: 1;
+}
+
+.card-content{
+	background:#27c667;
+}
+
+.progress{
+	height: 30px;
+}
+
+
+
+/*full page*/
+
+.section{
+	text-align:center;
+	padding: 0;
+	margin: 0;
+}
+/* Backgrounds will cover all the section
+* --------------------------------------- */
+.section{
+	background-size: cover;
+}
+.slide{
+	background-size: cover;
+}
+/* Defining each section background and styles
+* --------------------------------------- */
+
+/*SECTION 1 DESIGNS*/
+#section1{
+	background-image: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),url(../../images/content/desk.jpg); 
+	color: #fff;
+	font-size: 30px;
+	padding: 30% 0 0 0;
+	height: auto !important;
+	background-attachment: fixed;
+}
+
+#section1 img{
+	width: 100vw;
+	height: 100vh;
+}
+
+/*SECTION 2 DESIGNS*/
+#section2{
+	background-image: url(../../images/content/section2.jpg); 
+	font-family: caviar;
+	color: #fff;
+	font-size: 20px;
+	padding: 30% 0 0 0;
+	width: 100vw;
+	height: 100vh;
+}
+
+#section2 h2{
+	color: #27c667;
+	font-weight: bolder;
+	font-size: 5 vw;
+	border-bottom: 10px solid #27c667;
+}
+
+#section2 p img {
+	width: 100vw;
+	height: 100vh;
+}
+#section2 p{
+	color: #2e2e2e;
+	font-weight: bold;
+}
+
+#section2 img{
+	width: 500px;
+	height: 350px;
+}
+
+/*SECTION 3 DESIGNS*/
+#section3{
+	background-image: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),url(../../images/content/desk2.jpg);
+    font-family: caviar;
+    background-attachment: fixed;
+}
+#section3 img{
+	height: 200px;
+}
+
+/*SECTION 4 DESIGNS*/
+#section4 {
+	font-family: caviar;
+	width: 100vw;
+	height: 100vh;
+}
+
+#section4 img{
+	width: 32%;
+	height: 140px;
+}
+
+#section5{
+	background-image: url(../../images/content/contact-bg.jpg);
+	font-family: caviar;
+}
+
+/*SECTION 5 DESIGNS*/
+
+#section5 h1{
+	color: #27c667;
+}
+
+
+
+
+
+/*RESPONSIVE DESIGN*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	nav .brand-logo{
+		display: none;
+	}
+	nav .brand-logo-mobile{
+		display: inline-block;
+		width: 150px;
+		height: 150px;
+		margin-left: 100px;
+	}
+
+	#section1 img{
+		height: 200px;
+		width: 200px;
+		margin-bottom: -80px;
+	}
+
+	#section1 p{
+		font-size: 20px;
+	}
+
+	#section2 img{
+		width: 100%;
+		height: auto !important;
+	}
+
+	#section4 img{
+	width: 70%;
+	height: 140px;
+	}
+
+}
+
+
+
+@media only screen and (min-device-width : 1366px){
+
+	nav ul li a{
+	/*color: #27c667;*/
+	width: 150px;
+	font-size: 20;
+	font-family: newmars;
+	}
+
+	.brand-logo{
+		padding-left: 20px;
+	}
+	.section{
+	text-align:center;	
+	}
+	.section{
+		background-size: cover;
+	}
+
+	#section1 img{
+		height: 350px;
+		width: 350px;
+
+	}
+
+	/*.brand-logo{
+		width: 300px;
+		height: auto !important;
+	}*/
+
+
+
+	/*#section2 img{
+		width: auto;
+		padding-top: 100px;
+	}*/
+
+}
